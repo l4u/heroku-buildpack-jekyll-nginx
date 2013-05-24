@@ -75,7 +75,7 @@ echo "Running Jekyll" | indent
 export GEM_HOME=$BUILD_DIR/.gems
 export PATH=$BUILD_DIR/.gems/bin:$PATH
 cd $BUILD_DIR
-$BUILD_DIR/.gems/bin/jekyll | indent
+$BUILD_DIR/.gems/bin/jekyll build | indent
 
 
 
