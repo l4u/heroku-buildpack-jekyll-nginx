@@ -42,7 +42,7 @@ mkdir -p "$BUILD_DIR/bin"
 cp "$VENDORED_NGINX/sbin/nginx" "$BUILD_DIR/bin/nginx"
 
 # build nginx config unless overridden by user
-if [ ! -f $BUILD_DIR/conf/nginx.conf ] ; then
+if [ ! -f $BUILD_DIR/conf/nginx.conf.erb ] ; then
   echo "-----> Using default nginx.conf.erb"
   mkdir -p $BUILD_DIR/conf
 	cp $LP_DIR/conf/nginx.conf.erb $BUILD_DIR/conf/nginx.conf.erb
